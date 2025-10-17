@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "tailwindcss";
+
+
+@theme{
+        --font-family: 'Roboto', serif;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-1rem);
+  }
+}
+
+/* 🔹 Étape 2 : on déclare l'animation via @theme */
+@theme {
+  --animate-movingY: move 2s linear infinite;
+}
+
+ @keyframes slideUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+ @theme {
+  --animate-slide-up: slideUp 0.8s ease-out;
+}
