@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plante</title>
     <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="bg-green-950 m-0 p-0">
-    <div class=" container h-screen mx-auto mt-5">
+
+    <section id="home"  class=" container h-screen mx-auto mt-5">
+
         <!-- Nav-bar -->
-        <div class=" flex items-center justify-between">
+        <div id="navbar" class="w-full flex items-center justify-between">
             <div class="font-bold text-2xl text-white">
                 <p>IdorePlants.</p>
             </div>
             <ul class=" flex gap-16">
-                <li class=" hover:text-yellow-500 duration-300 font-bold text-yellow-500"><a href="#">Home</a></li>
-                <li class=" hover:text-yellow-500 duration-300 font-bold text-white"><a href="#">About</a></li>
-                <li class=" hover:text-yellow-500 duration-300 font-bold text-white"><a href="#">Popular</a></li>
-                <li class=" hover:text-yellow-500 duration-300 font-bold text-white"><a href="#">Review</a></li>
+                <li class=" hover:text-yellow-500 duration-300 font-bold text-yellow-500"><a href="#home">Home</a></li>
+                <li class=" hover:text-yellow-500 duration-300 font-bold text-white"><a href="#about">About</a></li>
+                <li class=" hover:text-yellow-500 duration-300 font-bold text-white"><a href="#popular">Popular</a></li>
+                <li class=" hover:text-yellow-500 duration-300 font-bold text-white"><a href="#review">Review</a></li>
             </ul>
         </div>
 
         <!-- body -->
-        <div class=" relative flex h-screen gap-18">
+        <div class=" relative flex h-screen mt-14 gap-18">
             <div>
                 <div>
-                    <p class=" font-bold text-6xl mt-6 text-white">
+                    <p class=" font-bold text-6xl text-white">
                         <span class="text-yellow-500">Plants</span> make a <br>positive <span class="text-yellow-500">impact</span> on <br>your environnement 
                     </p><br><br>
                     <p class=" text-xl text-white">
@@ -41,10 +45,10 @@
 
                 <!-- Icons -->
                 <div class="mt-20 text-2xl text-white tracking-[10px] font-light">
-                    <i class="fa-brands fa-facebook-f hover:text-yellow-500 duration-300"></i>
-                    <i class="fa-brands fa-github hover:text-yellow-500 duration-300"></i>
-                    <i class="fa-brands fa-instagram hover:text-yellow-500 duration-300"></i>
-                    <i class="fa-brands fa-linkedin-in hover:text-yellow-500 duration-300"></i>
+                    <i class="fa-brands fa-facebook-f hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                    <i class="fa-brands fa-github hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                    <i class="fa-brands fa-instagram hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                    <i class="fa-brands fa-linkedin-in hover:text-yellow-500 duration-300 cursor-pointer"></i>
                 </div>
             </div>
              
@@ -66,7 +70,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
                 
     <div class="flex bg-white p-20 justify-around">
         <div class=" border-1 border-green-900 rounded-xl hover:shadow-2xl p-5 hover:-translate-y-2 duration-300 cursor-pointer">
@@ -123,41 +127,45 @@
         </div>
     </div>
 
-    <div class="justify-items-end">
-        <img src="/images/plante6.png" class="w-50" alt="">
-    </div>
-    <div class="-mt-28">
-        <div class=" justify-items-center ">
-            <p class=" text-4xl font-bold text-yellow-500">About us</p><br>
-            <p class="text-white">Follow instruction for more</p>
-        </div>
 
-        <div class="justify-items-center mb-16 mt-12">
-            <div class="flex gap-36">   
-                <div>
-                    <img src="/images/plante7.png" class="w-48" alt="">
+    <!-- about-us -->
+
+    <section id="about">
+        <div class="justify-items-end">
+            <img src="/images/plante6.png" class="w-50" alt="">
+        </div>
+        <div class="-mt-28">
+            <div class=" justify-items-center ">
+                <p class=" text-4xl font-bold text-yellow-500">About us</p><br>
+                <p class="text-white">Follow instruction for more</p>
+            </div>
+
+            <div class="justify-items-center mb-16 mt-12">
+                <div class="flex gap-36">   
+                    <div>
+                        <img src="/images/plante7.png" class="w-48" alt="">
+                    </div>
+                    <div class="">
+                        <p class="text-2xl font-bold mt-26 text-white">Make your <span class=" text-yellow-500 ">organic</span><br>garden</p><br>
+                        <p class=" text-white font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis placeat <br>itaque commodi beatae adipisci perspiciatis cumque, perferendis, id iusto <br>laborum culpa rem magni maxime consequatur laborum culpa rem magni <br>maxime consequatur commodi beatae adipisci perspiciatis cumque. </p>
+                    </div>
                 </div>
-                <div class="">
-                    <p class="text-2xl font-bold mt-26 text-white">Make your <span class=" text-yellow-500 ">organic</span><br>garden</p><br>
-                    <p class=" text-white font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis placeat <br>itaque commodi beatae adipisci perspiciatis cumque, perferendis, id iusto <br>laborum culpa rem magni maxime consequatur laborum culpa rem magni <br>maxime consequatur commodi beatae adipisci perspiciatis cumque. </p>
+                <div class="flex gap-36">
+                    <div>
+                        <p class="text-2xl font-bold mt-14 text-white">Come with us<br><span class=" text-yellow-500">grow up</span> your plant</p><br>
+                        <p class="text-white font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis placeat <br>itaque commodi beatae adipisci perspiciatis cumque, perferendis, id iusto <br>laborum culpa rem magni maxime consequatur laborum culpa rem magni <br>maxime consequatur commodi beatae adipisci perspiciatis cumque. </p>
+                    </div>   
+                    <div>
+                        <img src="/images/plante8.png" class="w-48" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="flex gap-36">
-                <div>
-                    <p class="text-2xl font-bold mt-14 text-white">Come with us<br><span class=" text-yellow-500">grow up</span> your plant</p><br>
-                    <p class="text-white font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.Veritatis placeat <br>itaque commodi beatae adipisci perspiciatis cumque, perferendis, id iusto <br>laborum culpa rem magni maxime consequatur laborum culpa rem magni <br>maxime consequatur commodi beatae adipisci perspiciatis cumque. </p>
-                </div>   
-                <div>
-                    <img src="/images/plante8.png" class="w-48" alt="">
-                </div>
-            </div>
         </div>
-    </div>
-
+    </section>
 
     <!-- Choose plan -->
 
-    <div class="justify-items-center bg-green-900 p-28">
+    <section id="popular" class="justify-items-center bg-green-900 p-28">
         <p class=" text-3xl text-yellow-500 font-bold">Your choose plan</p>
         <p class=" font-bold text-white">Folow instruction for more</p>
 
@@ -267,13 +275,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Customer review -->
 
     <img src="/images/plante5.png" class=" w-48" alt="">
 
-    <div class=" h-screen -mt-28">
+    <section id="review" class=" h-screen -mt-28">
             
         <div class=" relative justify-items-center">
             <div class=" justify-items-center">
@@ -347,8 +355,7 @@
                 <input type="text" placeholder="Enter your Email Adress"  class=" p-2 border w-[700px] bg-white ">
                 <button class=" border p-2">Subscribe</button>  
         </div> 
-    </div>
-    </div>
+    </section>
 
     <footer class="flex bg-amber-50 p-28 justify-around">
         <div class="items-center">
@@ -385,5 +392,6 @@
         </div>
     </footer>
 </div>
+   
 </body>
 </html>
