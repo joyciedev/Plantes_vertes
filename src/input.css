@@ -3,10 +3,6 @@
 
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @theme{
         --font-family: 'Roboto', serif;
 }
